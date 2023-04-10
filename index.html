@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legislatibot</title>
+    
+    <!--Styles-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!--Script-->
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <dialog open>
+      <p>A note about how to use these summaries responsibly.</p>
+      <form method="dialog">
+        <button>OK</button>
+      </form>
+    </dialog>
+
+    <nav>
+      <span>Legislatibot</span>
+      <div>
+        <label for="site-search">Search:</label>
+        <input type="search" id="site-search" name="q">
+        <button>Search</button>
+      </div>
+    </nav>
+
+    <main>
+      <section class="summaries">
+        <h1>Summaries</h1>
+        <article class="summary">
+          <h2 data-bill-name="">SB106</h2>
+
+          <section>
+            <h3>Summary:</h3>
+            <p data-bill-summary="">
+              The Pennsylvania General Assembly proposes amendments to the state constitution, 
+              addressing several issues: denying a constitutional right to taxpayer-funded abortions,
+              modifying concurrent orders and resolutions, changing the Lieutenant Governor's selection process,
+              updating elector qualifications including voter identification requirements, 
+              and mandating election audits conducted by the Auditor General or an Independent Auditor. 
+              These proposed amendments will be submitted as separate ballot questions at the first primary, general, 
+              or municipal election occurring at least three months after passing the General Assembly.
+            </p>
+          </section>
+
+          <section class="bill-details">
+            <h3>Details:</h3>
+            <div>
+              <span>Other info</span>
+              <span data-bill-date="">Bill Dated: July 11, 2022 </span>
+              <a data-bill-link="" target="_blank" href="https://www.legis.state.pa.us/cfdocs/billinfo/billinfo.cfm?sYear=2021&sInd=0&body=S&type=B&bn=106">Full Text</a>
+            </div>
+          </section>
+        </article>  
+      </section>
+      <button onclick="onButtonClick()">Add New Element </button>
+    </main>
+  </body>
+</html>
